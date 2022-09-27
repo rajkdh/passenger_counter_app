@@ -1,6 +1,7 @@
-//document.getElementById("count").innerText = 5
+
 
 let countEl = document.getElementById('count-el')
+let saveEl = document.getElementById('save-el')
 
 let totalCount = 0;
 
@@ -12,8 +13,17 @@ function increment() {
 // 1. Create a function, save(), which logs out the count when it's called
 
 function save() {
-    //console.log(totalCount);
+    let savedEntries = ' ' + totalCount + ' - '
+
+    saveEl.textContent += savedEntries
+    countEl.innerText = 0
+    totalCount = 0
+
 }
+    
+
+
+//set back to zero everytime you hit save. 2 sets of code.
 
 
 
@@ -24,6 +34,4 @@ function save() {
 
 
 
-
-//           RANDOM
 
